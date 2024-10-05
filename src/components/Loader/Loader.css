@@ -1,0 +1,72 @@
+/* src/PrawnLoader.css */
+.prawn-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .prawn {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: #FF6347;
+    border-radius: 50px 50px 0 0;
+    animation: prawn-dance 1.5s linear infinite;
+  }
+  
+  .prawn-body {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: #FF4500;
+    border-radius: 50px;
+  }
+  
+  .prawn-tail {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 20px;
+    height: 40px;
+    background-color: #FF6347;
+    border-radius: 10px;
+    transform-origin: center;
+    animation: tail-wiggle 1s ease-in-out infinite;
+  }
+  
+  .prawn-eye {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  @keyframes prawn-dance {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes tail-wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

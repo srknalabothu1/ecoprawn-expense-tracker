@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+  display: "flex" !important;
+  flex-direction: row !important;
 }
-
+.app-container {
+  background-image: url('./assets/background.jpg');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  height: 100vh; /* Makes sure the container takes full viewport height */
+  width: 100vw; /* Makes sure the container takes full viewport width */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +45,7 @@
     transform: rotate(360deg);
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
