@@ -1,6 +1,6 @@
 
 
-const URL = 'http://localhost:3000/api/users';
+const URL = 'https://ecoprawnnodebe-ks53.vercel.app/api/users';
 export const createUser = async (userData) => {
     try {
         const response = await fetch(`${URL}/create`, {
