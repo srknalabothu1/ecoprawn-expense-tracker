@@ -1,5 +1,4 @@
 
-import axios from 'axios';
 
 const URL = 'http://localhost:3000/api/users';
 export const createUser = async (userData) => {
@@ -32,15 +31,6 @@ export const getUsers = async () => {
     }
 };
 
-// export const deleteUser = async (userId) => {
-//     try {
-//       await axios.delete(`${API_URL}/${userId}`);
-//       return true;
-//     } catch (error) {
-//       console.error('Error deleting user:', error);
-//       return false;
-//     }
-//   };
 
 
 export const deleteUser = async (userId) => {
